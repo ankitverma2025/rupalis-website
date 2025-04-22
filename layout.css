@@ -1,0 +1,129 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Layout and base styling */
+body {
+    background-color: #f9f9f9;
+    padding: 40px;
+}
+
+header {
+    background-color: #1e293b;
+    padding: 20px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    list-style: none;
+}
+
+.hero {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* Responsive Layout */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    body {
+        padding: 20px;
+    }
+
+    p {
+        font-size: 1rem;
+        padding: 20px;
+    }
+}
+
+table {
+    width: 80%;
+    margin: 40px auto;
+    table-layout: fixed;
+    /* center the table */
+    border-collapse: collapse;
+    border-radius: 8px;
+    border-spacing: 0;
+    overflow: hidden;
+}
+
+.work-detail {
+    width: 80%;
+    margin: 40px auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Reset margin-top to 0, then selectively add */
+.work-detail h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+/* Apply line and spacing above all but the first h2 */
+.work-detail h2:not(:first-of-type)::before {
+    content: "";
+    display: block;
+    height: 2px;
+    background-color: #ccc;
+    margin: 40px 0 30px 0;
+    /* top margin creates space; bottom margin pushes down heading */
+}
+
+
+th,td {
+    max-width: 250px;
+    padding: 16px;
+    word-wrap: break-word;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+
+.contact-card {
+    max-width: 600px;
+    margin: 60px auto;
+    padding: 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+    text-align: center;
+}
+
+.contact-card h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    color: #1e293b;
+}
+
+.contact-card p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+    color: #475569;
+}
+
+.email-box a {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #3b82f6;
+    text-decoration: none;
+}
+
+.email-box a:hover {
+    text-decoration: underline;
+}

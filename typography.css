@@ -1,0 +1,103 @@
+/* Typography styles */
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.main-content {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.work-detail {
+    font-size: 1rem;
+    line-height: 1.8;
+    list-style-position: inside; /* ⬅️ this moves the dots inside the padding */
+        padding-left: 0; /* controls how far list moves in */
+}
+
+.work-detail ul li {
+    padding-left: 1.2em; /* push text over so it's not right on the bullet */
+    text-indent: -1.2em; /* pull first line back so bullets line up */
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+
+.hero h1 {
+    font-size: 2.5rem;
+    color: #1e293b;
+    font-weight: 700;
+}
+
+.hero h2 {
+    font-size: 1.3rem;
+    color: #64748b;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+nav ul li a {
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+th,td {
+    text-align: left;
+    vertical-align: top;
+    word-wrap: break-word;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.project-showcase {
+    width: 80%;
+    margin: 40px auto;
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+}
+
+.project-showcase h2 {
+    font-size: 1.8rem;
+    color: #1e293b;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.project-block {
+    margin-bottom: 40px;
+}
+
+.project-block h3 {
+    font-size: 1.2rem;
+    color: #334155;
+    margin-bottom: 10px;
+}
+
+.project-block ul {
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.project-block ul li {
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+    margin-bottom: 8px;
+    line-height: 1.6;
+}
+
+.work-in-progress h1 {
+    font-size: 1.8rem;
+    margin: 20px 0;
+}
+
+.work-in-progress {
+    text-align: center;
+}
+
+
